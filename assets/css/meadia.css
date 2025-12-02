@@ -1,0 +1,508 @@
+/* responsive.css - Responsive Design for MediSlots.in */
+
+/* ==================== Large Devices (Desktops, 1200px and up) ==================== */
+
+@media (max-width: 1399px) {
+    .hero-header h2 {
+        font-size: 60px;
+    }
+
+    .bg {
+        background-image: url(/assets/media/images/hero-banner.webp);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 60px;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem !important;
+    }
+
+    .form-container {
+        width: 380px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-header h2 {
+        font-size: 60px;
+    }
+
+    .bg {
+        background-image: url(/assets/media/images/hero-banner.webp);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 60px;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem !important;
+    }
+
+    .form-container {
+        width: 380px;
+    }
+}
+
+/* ==================== Medium Devices (Tablets, 992px to 1199px) ==================== */
+@media (max-width: 992px) {
+
+    /* Header Adjustments */
+    .navbar-brand {
+        font-size: 26px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        right: 100%;
+    }
+
+    .nav-item a {
+        font-size: 1.1rem;
+        margin-right: 1.5rem;
+    }
+
+    .buttons a i {
+        font-size: 2.5rem;
+    }
+
+    .signUp {
+        font-size: 1.1rem !important;
+        padding: 8px 20px !important;
+    }
+
+    /* Hero Section */
+    .hero .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bg {
+        background-image: url(/assets/media/images/hero-banner.webp);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero .col-7,
+    .hero .col-5 {
+        width: 100% !important;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .hero-header {
+        margin-top: 30px !important;
+    }
+
+    .hero-header h2 {
+        font-size: 50px;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 50px;
+        margin-right: 1rem;
+    }
+
+    .hero-header .text-1 {
+        justify-content: center;
+    }
+
+    .hero-header .text-2 {
+        justify-content: center;
+    }
+
+    .hero-header img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .hero-text {
+        margin-top: 30px !important;
+    }
+
+    .hero-text p {
+        font-size: 1rem !important;
+        padding: 0 20px;
+    }
+
+    .login {
+        margin: 30px auto 0 auto !important;
+        width: 250px !important;
+        font-size: 1.2rem !important;
+    }
+
+    .img-frame {
+        margin: 40px auto 0 auto;
+        max-width: 500px;
+    }
+
+    /* Form Sections */
+    .forms .col-5,
+    .sign-up .col-4 {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .form-container {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate(-50%, -50%) !important;
+        width: 450px;
+        z-index: 10000;
+    }
+}
+
+/* ==================== Small Devices (Landscape Phones, 768px to 991px) ==================== */
+@media (max-width: 768px) {
+
+    /* Header Adjustments */
+    header {
+        padding: 10px !important;
+    }
+
+    .navbar {
+        padding: 10px !important;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-item a {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .buttons a i {
+        font-size: 2.2rem;
+        margin-right: 15px;
+    }
+
+    .signUp {
+        font-size: 1rem !important;
+        padding: 6px 16px !important;
+    }
+
+    /* Hero Section */
+    .divider {
+        height: 70px;
+        margin-top: 10px;
+    }
+
+    .bg {
+        background-image: url(/assets/media/images/hero-banner.webp);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 0;
+    }
+    .hero-header h2 {
+        font-size: 42px;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 42px;
+    }
+
+    .hero-header img {
+        width: 85px;
+        height: 100px;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem !important;
+        padding: 0 15px;
+    }
+
+    .login {
+        width: 200px !important;
+        font-size: 1.1rem !important;
+        padding: 10px 20px !important;
+    }
+
+    .img-frame {
+        max-width: 400px;
+    }
+
+    /* Forms */
+    .form-container {
+        width: 400px;
+        padding: 30px;
+    }
+
+    .animated-form h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+}
+
+/* ==================== Extra Small Devices (Portrait Phones, 576px to 767px) ==================== */
+@media (max-width: 576px) {
+
+    /* Header Adjustments */
+    .navbar-toggler {
+        padding: 4px 8px;
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 22px;
+    }
+
+    .navbar-collapse {
+        background-color: #f8f6f6;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .nav-item a {
+        color: #333 !important;
+        margin-right: 0;
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item:first-child a {
+        color: #2222da !important;
+    }
+
+    .buttons {
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .buttons a i {
+        font-size: 2rem;
+    }
+
+    .signUp {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0.9rem !important;
+        padding: 5px 14px !important;
+    }
+
+    /* Hero Section */
+    .divider {
+        height: 50px;
+    }
+
+    .hero-header {
+        margin-top: 20px !important;
+    }
+
+    .hero-header h2 {
+        font-size: 32px;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 32px;
+        margin-right: 0.5rem;
+    }
+
+    .hero-header img {
+        width: 70px;
+        height: 85px;
+    }
+
+    .hero-text {
+        margin-top: 20px !important;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem !important;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
+    .login {
+        width: 180px !important;
+        font-size: 1rem !important;
+        padding: 8px 16px !important;
+    }
+
+    .img-frame {
+        max-width: 320px;
+        margin: 30px auto 0 auto;
+    }
+
+    /* Forms */
+    .form-container {
+        width: 90%;
+        max-width: 350px;
+        padding: 25px 20px;
+    }
+
+    .animated-form h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #closeLogin,
+    #closeSignup {
+        top: -10px;
+        right: -10px;
+        left: auto !important;
+        bottom: auto !important;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        padding: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ==================== Extra Extra Small Devices (Below 576px) ==================== */
+@media (max-width: 480px) {
+
+    /* Hero Section */
+    .hero-header h2 {
+        font-size: 28px;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 28px;
+    }
+
+    .hero-header img {
+        width: 60px;
+        height: 75px;
+    }
+
+    .hero-text p {
+        font-size: 0.85rem !important;
+        padding: 0 5px;
+    }
+
+    .login {
+        width: 160px !important;
+        font-size: 0.9rem !important;
+        padding: 7px 14px !important;
+    }
+
+    .img-frame {
+        max-width: 280px;
+    }
+
+    /* Forms */
+    .form-container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .animated-form h2 {
+        font-size: 1.4rem;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+}
+
+/* ==================== Height Adjustments for Mobile ==================== */
+@media (max-height: 700px) and (max-width: 992px) {
+    .hero {
+        min-height: 700px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .divider {
+        height: 40px;
+    }
+}
+
+/* ==================== Orientation Specific ==================== */
+@media (max-width: 992px) and (orientation: landscape) {
+    .hero {
+        min-height: 600px;
+        height: auto;
+    }
+
+    .divider {
+        height: 30px;
+    }
+
+    .hero-header h2 {
+        font-size: 36px;
+    }
+
+    .hero-header .text-1 i,
+    .hero-header .text-2 i {
+        font-size: 36px;
+    }
+
+    .hero-header img {
+        width: 60px;
+        height: 70px;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem !important;
+        margin-top: 15px !important;
+    }
+
+    .login {
+        margin-top: 20px !important;
+        padding: 6px 12px !important;
+    }
+}
+
+/* ==================== Print Styles ==================== */
+@media print {
+
+    .forms,
+    .sign-up,
+    .login,
+    .signUp,
+    .buttons,
+    .navbar-toggler {
+        display: none !important;
+    }
+
+    .hero {
+        background: white !important;
+        color: black !important;
+        height: auto !important;
+    }
+
+    .hero-header h2,
+    .hero-text p {
+        color: black !important;
+    }
+}

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.divider {
+    height: 100px;
+    margin-top: 20px;
+}
+
+.s-text {
+    color: #ffffff;
+}
+
+.bg {
+    background-image: url(/assets/media/images/hero-banner.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    z-index: 9999 !important;
+}
+
+.navbar {
+    background: #f8f6f673;
+}
+
+.navbar-brand {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #000 !important;
+}
+
+.nav-item a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    color: rgb(252, 252, 252);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:first-child a {
+    color: #2222da;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:first-child a:hover {
+    color: #000;
+}
+
+.nav-item a:hover {
+    color: #000;
+}
+
+.nav-item.active:hover {
+    color: #000;
+}
+
+.buttons a i {
+    color: #2020ea;
+    margin-right: 20px;
+}
+
+.buttons a i:hover {
+    color: #8a2be2;
+}
+
+
+
+.hero-header {
+
+    font-weight: 600;
+}
+
+.hero-header h2 {
+    font-size: 72px;
+    color: #ffffff;
+}
+
+
+
+.hero-header .text-1 i {
+    font-size: 72px;
+    margin-right: 2rem;
+}
+
+.hero-header .text-2 i {
+    font-size: 72px;
+    margin-right: 2rem;
+}
+
+.left,
+.right {
+    width: 100%;
+}
+
+.left {
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: slideLeft 1s ease-out forwards;
+}
+
+/* Animation for right side */
+.right {
+    opacity: 0;
+    transform: translateX(200px);
+    animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.up {
+    opacity: 0;
+    transform: translateY(300px);
+    animation: slideup 1s ease-out forwards;
+}
+
+@keyframes slideup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* hero end */
+
+/* form start */
+
+#loginForm,
+#signUp {
+   display: none;   /* page load se hi hidden */
+}
+ 
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 420px;
+}
+
+.animated-form {
+    width: 100%;
+}
+
+.animated-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #007bff;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -18px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
